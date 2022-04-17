@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../../fonts/tailwind.min.css">
+    <link rel="stylesheet" href="./guess-css.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to guess game</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-h1">
+            this is guess game
+        </h1>
+        <div class="header-div">
+            <p class="header-div-point-origin">origin</p>
+            <span class="header-div-time">time</span>
+        </div>
+    </header>
+    <main class="main">
+        <input type="number" class="main-input">
+        <button class="main-button">submit</button>
+        <p class="main-result">no result</p>
+        <p class="main-guessed">no guess</p>
+        <p class="main-counter">not started</p>
+        <div class="main-condition">
+            <span class="main-condition-win">win counter</span>
+            <span class="main-condition-lose">lose counter</span>
+        </div>
+    </main>
+    <footer class="footer">
+        <button class="footer-finish">try again</button>
+    </footer>
+    <script src="./guess-app.js"></script>
+</body>
+
+</html>

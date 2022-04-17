@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 8%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .header-h1 {
+  text-align: center;
+  color: #d3d3d3;
+}
+body .header-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+body .header-div-point-origin {
+  color: #ffd363;
+}
+body .header-div-time {
+  color: orange;
+  margin-top: 3vh;
+}
+body .main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 2%;
+  width: 50vw;
+  margin-top: 5%;
+}
+body .main-button {
+  padding: 2%;
+  border: none;
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+  transition: 0.7s ease-in-out;
+  margin-top: 4vh;
+}
+body .main-button:hover {
+  background: red;
+  color: white;
+  border-radius: 2px;
+}
+body .main-result {
+  color: #f9b651;
+  margin: 4vh 0;
+}
+body .main-guessed {
+  color: white;
+  margin: 3vh 0;
+}
+body .main-counter {
+  color: #ffcc41;
+  margin: 3vh;
+}
+body .main-condition {
+  padding: 3vh 0;
+}
+body .main-condition-win {
+  color: #44f77d;
+}
+body .main-condition-lose {
+  color: #f97bf9;
+  margin-left: 2vw;
+}
+body .footer-finish {
+  border: none;
+  padding: 1vh 3vw;
+  border-radius: 3px;
+  background-color: transparent;
+  color: lightcoral;
+  border: 1px solid coral;
+  transition: 0.7s linear;
+}
+body .footer-finish:hover {
+  background-color: lightcoral;
+  text-shadow: 2px 2px 3px black;
+  color: white;
+}
+
+/*# sourceMappingURL=guess-css.css.map */
