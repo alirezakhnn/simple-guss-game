@@ -25,6 +25,18 @@ submit.addEventListener('click', function() {
             input.placeholder = 'no input';
         } else if (input.value == 'e') {
             input.placeholder = 'invalid input';
+        } else {
+            var random = getRandomNumberBetween(0, 100);
+            if (input.value == random) {
+                result.innerHTML = 'you won !';
+                wincount++;
+                win.innerHTML = 'turn won ' + Number(wincount);
+            } else {
+                result.innerHTML = 'you lost !' + '<br>';
+                losecount++;
+                lose.innerHTML = 'turn lose ' + Number(losecount);
+            }
+            result.innerHTML += ' ' + 'the number was: ' + random;
         }
         if (input.value == '') {
             guessed.innerHTML = 'nothing guessed !';
@@ -39,19 +51,10 @@ submit.addEventListener('click', function() {
             input.placeholder = '';
             if (five == 0) {
                 input.readOnly = true;
+                input.placeholder = 'finished';
             }
         }
-        var random = getRandomNumberBetween(0, 100);
-        if (input.value == random) {
-            result.innerHTML = 'you won !';
-            wincount++;
-            win.innerHTML = 'turn won ' + Number(wincount + 1);
-        } else {
-            result.innerHTML = 'you lost !' + '<br>';
-            losecount++;
-            lose.innerHTML = 'turn lose ' + Number(losecount);
-        }
-        result.innerHTML += ' ' + 'the number was: ' + random;
+
     }
 })
 tryAgain.addEventListener('click', function() {
