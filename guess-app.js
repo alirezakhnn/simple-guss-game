@@ -55,6 +55,8 @@ submit.addEventListener('click', function() {
                 submit.disabled = true;
                 if (lose > win) {
                     alert('you lost')
+                } else if (lose == win) {
+                    alert('draw')
                 } else {
                     alert('you won')
                 }
@@ -70,6 +72,3 @@ tryAgain.addEventListener('click', function() {
 function getRandomNumberBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
-//math.random()*100 //default its between 0 and 1, so we * 100;
-//alert(math.floor(math.random() * 100))
