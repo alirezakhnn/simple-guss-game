@@ -53,9 +53,9 @@ submit.addEventListener('click', function() {
                 input.readOnly = true;
                 input.placeholder = 'finished';
                 submit.disabled = true;
-                if (lose > win) {
+                if (losecount > wincount) {
                     alert('you lost')
-                } else if (lose == win) {
+                } else if (losecount == wincount) {
                     alert('draw')
                 } else {
                     alert('you won')
