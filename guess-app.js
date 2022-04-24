@@ -1,5 +1,5 @@
 let origin = document.getElementsByClassName('header-div-point-origin')[0];
-origin.textContent = 'welcome to my game so guess number between 0 to 20';
+origin.textContent = 'welcome to my game so guess number between 0 to 10';
 let time = document.getElementsByClassName('header-div-time')[0];
 setInterval(() => {
     time.innerHTML = new Date().getHours() + ':';
@@ -26,7 +26,7 @@ submit.addEventListener('click', function() {
         } else if (input.value == 'e') {
             input.placeholder = 'invalid input';
         } else {
-            var random = getRandomNumberBetween(0, 20);
+            var random = getRandomNumberBetween(0, 10);
             if (input.value == random) {
                 result.innerHTML = 'you won !';
                 wincount++;
@@ -40,6 +40,7 @@ submit.addEventListener('click', function() {
         }
         if (input.value == '') {
             guessed.innerHTML = 'nothing guessed !';
+            result.innerHTML = 'no guessed';
         } else if (input.value == 'e') {
             guessed.innerHTML = 'dont input characters';
         } else {
